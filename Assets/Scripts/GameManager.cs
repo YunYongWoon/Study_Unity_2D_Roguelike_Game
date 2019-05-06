@@ -19,8 +19,7 @@ public class GameManager : MonoBehaviour{
 			instance = this;
 		else if (instance != this)
 			Destroy(gameObject);
-
-		DontDestroyOnLoad(gameObject);
+			
 		enemies = new List<Enemy>();
 		boardScropt = GetComponent<BoardManager>();
 		InitGame();
