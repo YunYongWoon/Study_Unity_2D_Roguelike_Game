@@ -20,8 +20,6 @@ public class Enemy : MovingObject {
 		base.Start();
     }
 
-    // Update is called once#    }
-
 	protected override void AttemptMove<T> (int xDir, int yDir) {
 		if (skipMove) {
 			skipMove = false;
@@ -45,9 +43,7 @@ public class Enemy : MovingObject {
 
 	protected override void OnCantMove<T> (T component) {
 		Player hitPlayer = component as Player;
-
+		animator.SetTrigger("enemyAttack");
 		hitPlayer.LoseFood(playerDamage);
-
-		animator.SetTrigger("EnemyAttack");
 	}
 }

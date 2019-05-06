@@ -5,7 +5,7 @@ using UnityEngine;
 public abstract class MovingObject : MonoBehaviour
 {
 	public float movetime = 0.1f;
-	public LayerMask blockingLayer;
+	public LayerMask BlockingLayer;
 
 	private BoxCollider2D boxCollider;
 	private Rigidbody2D rb2D;
@@ -23,7 +23,7 @@ public abstract class MovingObject : MonoBehaviour
 		Vector2 end = start + new Vector2(xDir, yDir);
 
 		boxCollider.enabled = false;
-		hit = Physics2D.Linecast(start, end, blockingLayer);
+		hit = Physics2D.Linecast(start, end, BlockingLayer);
 		boxCollider.enabled = true;
 
 		if (hit.transform == null) {
