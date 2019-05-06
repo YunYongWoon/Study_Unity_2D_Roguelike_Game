@@ -60,14 +60,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\_Complete-Game\Scripts\BoardManager.cs" />
-    <Compile Include="Assets\_Complete-Game\Scripts\Enemy.cs" />
-    <Compile Include="Assets\_Complete-Game\Scripts\GameManager.cs" />
-    <Compile Include="Assets\_Complete-Game\Scripts\Loader.cs" />
-    <Compile Include="Assets\_Complete-Game\Scripts\MovingObject.cs" />
-    <Compile Include="Assets\_Complete-Game\Scripts\Player.cs" />
-    <Compile Include="Assets\_Complete-Game\Scripts\SoundManager.cs" />
-    <Compile Include="Assets\_Complete-Game\Scripts\Wall.cs" />
     <Compile Include="Assets\Scripts\BoardManager.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
