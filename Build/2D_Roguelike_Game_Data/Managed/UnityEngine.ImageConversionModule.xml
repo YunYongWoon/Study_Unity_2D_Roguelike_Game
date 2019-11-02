@@ -6,7 +6,7 @@
     </assembly>
     <member name="T:UnityEngine.ImageConversion">
       <summary>
-        <para>Class with utility methods and extension methods to deal with converting image data from or to PNG and JPEG formats.</para>
+        <para>This class provides utility and extension methods to convert image data from or to PNG, EXR, TGA, and JPEG formats.</para>
       </summary>
     </member>
     <member name="M:UnityEngine.ImageConversion.EncodeToEXR(UnityEngine.Texture2D,UnityEngine.Texture2D/EXRFlags)">
@@ -36,6 +36,12 @@
       </summary>
       <param name="tex">The texture to convert.</param>
     </member>
+    <member name="M:UnityEngine.ImageConversion.EncodeToTGA(UnityEngine.Texture2D)">
+      <summary>
+        <para>Encodes the specified texture in TGA format.</para>
+      </summary>
+      <param name="tex">The texture to encode.</param>
+    </member>
     <member name="M:UnityEngine.ImageConversion.LoadImage(UnityEngine.Texture2D,System.Byte[],System.Boolean)">
       <summary>
         <para>Loads PNG/JPG image byte array into a texture.</para>
@@ -46,6 +52,11 @@
       <returns>
         <para>Returns true if the data can be loaded, false otherwise.</para>
       </returns>
+    </member>
+    <member name="A:UnityEngine.ImageConversionModule">
+      <summary>
+        <para>The ImageConversion module implements the ImageConversion class which provides helper methods to convert images from and to PNG, JPEG or EXR formats.</para>
+      </summary>
     </member>
   </members>
 </doc>
